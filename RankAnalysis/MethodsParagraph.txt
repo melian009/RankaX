@@ -1,0 +1,16 @@
+Species rank estimation 
+
+We integrated all the information into a simple species rank considering all criteria following the equation SR = IF + IR + F + C + E + L + D + VR + GR + U. Since some criteria were continuous and others ordinal, we standardised all criteria according to (X-Xmin)/(Xmax-Xmin), where X, Xmin and Xmax are the value of each criteria, and the minimum and maximum values among all plant species recorded for a given criterion, respectively. We tested the species rank robustness by comparing it with the Wilcoxon signed-rank test (Appendix S2).
+
+
+
+Appendix S2
+The test compares each plant species with all the species in the community for each specific criterion, thus testing whether the population mean ranks significantly differ for each pair of plant species. We discarded all pairs that were not significantly different to account only for the significant criteria values contributing to unique restauration features of each species. For each criterion we obtained a matrix of the significant differences in mean ranks for all plant species pairs combination, from which all comparing values for each species were summed to obtain the total SR(w). Those plant species significantly differing from the largest number of plant species accounting for the largest difference in the median ranks contributes the most for the restoration. Specifically, the SR(w) for species i and criteria c is computed as:
+
+SR(w)ic = sum (from species j to N, where i non equal to j for pairs p < 0.05) Mean i - Mean j
+where j is plant species different to i, c is the criteria and N is the total number of plant species. 
+
+The total SR(w) for species i is given by:
+
+SR(w) i = sum (SR(w) ic)
+

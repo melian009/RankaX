@@ -1,0 +1,10 @@
+Estimation of the index for interaction restoration (IIR)
+
+We integrate all the information into a IIR test using the Wilcoxon signed rank test. We use ten criteria per species, named IA: interaction abundance, IR: interaction richness, F: flowering phenology, C: spatial consistency, E: endemism status, L: life form, D: dispersal strategy, VR: vegetative reproduction, GR: germinative requirements, and  U: plant uses. The test is used to compare each plant species with all the plant species in the community for each specific criteria to test whether the population median ranks significantly differ for each pair. The plant species significantly differing from the largest number of plant species accounting for the largest difference in the median ranks contributes the most for the restauration. Specifically, the IIR for species i and criteria c is computed as
+
+IIR_i_c = sum(from species j to N, where i non equal to j for pairs p < 0.05) Median i - Median j
+
+where j is plant species different to i, c is the criteria and N is the total lnumber of plant species. The total IIR for each species is given by  
+
+IIR_i = sum(IIR_i_c) (Table X).
+
